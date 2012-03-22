@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<model type="rbappmit" machformat="le">
+	<description>
+		<name>MIT Logo</name>
+		<created>2011-08-01</created>
+		<short>The MIT logo in fancy colors</short>
+		<image>sample_3.png</image>
+		<infohtml>site_info.html</infohtml>
+	</description>
+	<numDoFfields>4</numDoFfields>
+	<visual>
+		<fields>
+			<field type="Displacement3D" mapping="VERTEX"/>
+			<field type="RealValue" mapping="VERTEX">Heat</field>
+		</fields>
+	</visual>
+</model>

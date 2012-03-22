@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<model type="rbappmit" machformat="le">
+	<description>
+		<short>Channel flow</short>
+		<created>2011-08-01</created>
+		<short>A Navier-Stokes channel flow simulation</short>
+		<image>sample_11.png</image>
+		<infohtml>site_info.html</infohtml>
+	</description>
+	<numDoFfields>3</numDoFfields>
+	<visual>
+		<fields>
+			<field type="RealValue" mapping="VERTEX">Flow 1</field>
+			<field type="RealValue" mapping="VERTEX">Flow 2</field>
+			<field type="RealValue" mapping="VERTEX">Flow 3</field>
+		</fields>
+	</visual>
+</model>

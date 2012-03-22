@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<model type="rbappmit" machformat="le">
+	<description>
+		<name>Cracking pillar</name>
+		<created>2011-08-01</created>
+		<short>Simulates a crack in a pillar</short>
+		<image>sample_1.png</image>
+		<infohtml>site_info.html</infohtml>
+	</description>
+	<numDoFfields>2</numDoFfields>
+	<rbappmit_model/>
+	<visual>
+		<fields>
+			<field type="Displacement2D" mapping="VERTEX"/>
+		</fields>
+	</visual>
+</model>

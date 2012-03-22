@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<model type="rbappmit" machformat="le">
+	<description>
+		<name>Unit cell</name>
+		<created>2011-08-01</created>
+		<short>A composite unit cell simulation</short>
+		<image>sample_2.png</image>
+		<infohtml>site_info.html</infohtml>
+	</description>
+	<numDoFfields>2</numDoFfields>
+	<visual>
+		<fields>
+			<field type="RealValue" mapping="VERTEX">Out 1</field>
+			<field type="RealValue" mapping="VERTEX">Out 2</field>
+		</fields>
+	</visual>
+</model>

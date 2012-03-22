@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<model type="rbappmit" machformat="le">
+	<description>
+		<name>Two-layer conduction</name>
+		<created>2011-08-01</created>
+		<short>Two-layer conduction simulation</short>
+		<image>sample_7.png</image>
+		<infohtml>site_info.html</infohtml>
+	</description>
+	<numDoFfields>1</numDoFfields>
+	<visual>
+		<fields>
+			<field type="RealValue" mapping="VERTEX">Conduction</field>
+		</fields>
+	</visual>
+</model>
