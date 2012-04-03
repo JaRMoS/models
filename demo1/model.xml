@@ -8,7 +8,6 @@
 		<infohtml>site_info.html</infohtml>
 	</description>
 	<numDoFfields>2</numDoFfields>
-	<rbappmit_model/>
 	<visual>
 		<fields>
 			<field type="Displacement2D" mapping="VERTEX"/>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<model type="JKerMor" machformat="be">
+	<description>
+		<short>DynLin Timoschenko Beam</short>
+		<created>2012-03-24</created>
+	</description>
+	<kermor_model>
+		<T>5.00000000000000000</T>
+		<dt>0.05000000000000000</dt>
+	<dim>34</dim>
+	<solvertype>implicit</solvertype>
+	<outputtodof>TimoOutToDoF</outputtodof>
+	<parameters>
+		<param name="d1" min="0.00000000000000000" max="2.00000000000000000" label="d1"/>
+		<param name="d2" min="0.00000000000000000" max="0.10000000000000001" label="d2"/>
+		<param name="gravity constant" min="-20.00000000000000000" max="20.00000000000000000" label="gravity constant"/>
+	</parameters>
+	<corefun type="dscomponents.AffLinCoreFun">
+		<coeffclass>CoreFunCoeffs</coeffclass>
+	</corefun>
+	<inputconv type="dscomponents.AffLinInputConv">
+		<coeffclass>InputConvCoeffs</coeffclass>
+	</inputconv>
+	<massmatrix type="dscomponents.ConstMassMatrix">
+	</massmatrix>
+	<outputconvtype>dscomponents.LinearOutputConv</outputconvtype>
+	<initialvaluetype>dscomponents.ConstInitialValue</initialvaluetype>
+	</kermor_model>
+<numDoFfields>6</numDoFfields>
+<geometry>
+	<dimension>3</dimension>
+	<nodes>30</nodes>
+	<hasFaces>false</hasFaces>
+	<hasDirichletNodes>true</hasDirichletNodes>
+</geometry>
+<visual><fields>
+	<field type="Displacement3D" mapping="VERTEX"/>
+	<field type="RealValue" mapping="VERTEX">X-Velocity</field>
+	<field type="RealValue" mapping="VERTEX">Y-Velocity</field>
+	<field type="RealValue" mapping="VERTEX">Z-Velocity</field>
+</fields></visual>
+<package>models.beam.dynlintimo</package>
+</model>
